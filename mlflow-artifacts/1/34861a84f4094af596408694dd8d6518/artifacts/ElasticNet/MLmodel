@@ -1,0 +1,28 @@
+artifact_path: ElasticNet
+flavors:
+  python_function:
+    code: code
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.5
+  sklearn:
+    code: code
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.16.2
+model_size_bytes: 847250
+model_uuid: d6affd45e56649b9a305170b2ad84e23
+run_id: 34861a84f4094af596408694dd8d6518
+saved_input_example_info:
+  artifact_path: input_example.json
+  type: sparse_matrix_csr
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 7940]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-10-16 08:53:18.889774'
